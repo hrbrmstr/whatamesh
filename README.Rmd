@@ -4,11 +4,23 @@ output: rmarkdown::github_document
 
 # whatamesh
 
+Tools to Work with ASCII MeSH Files
+
 ## Description
+
+Tools to Work with ASCII MeSH Files
+
+Ref:
+
+- <ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/>
+- <https://stackoverflow.com/questions/52814022/how-to-split-txt-file-at-specific-location-and-import-each-part-as-table-in-r/52815428?noredirect=1#comment92554994_52815428>
 
 ## What's Inside The Tin
 
 The following functions are implemented:
+
+- `list_mesh_files`:	List ASCII MeSH Files Available For Download
+- `read_mesh_file`:	Download and parse an ASCII MeSH File
 
 ## Installation
 
@@ -30,3 +42,26 @@ packageVersion("whatamesh")
 
 ```
 
+### List Remote MeSH Files
+
+```{r}
+list_mesh_files()
+```
+
+
+### Read & Parse a MeSH File
+
+If the string passed in matches a local filename it will be read in locally, otherwise it will be downloaded. NOTE: large files take a while.
+
+Nested:
+
+```{r}
+read_mesh_file("q2018.bin")
+```
+
+
+Wide:
+
+```{r}
+read_mesh_file("q2018.bin", wide = TRUE)
+```

@@ -1,6 +1,6 @@
 Package: whatamesh
 Type: Package
-Title: whatamesh title goes here otherwise CRAN checks fail
+Title: Tools to Work with ASCII MeSH Files
 Version: 0.1.0
 Date: 2018-10-15
 Authors@R: c(
@@ -8,7 +8,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: Tools to Work with ASCII MeSH Files
 URL: https://gitlab.com/hrbrmstr/whatamesh
 BugReports: https://gitlab.com/hrbrmstr/whatamesh/issues
 Encoding: UTF-8
@@ -20,5 +20,8 @@ Depends:
     R (>= 3.2.0)
 Imports:
     httr,
+    stringi,
+    purrr,
+    dplyr,
     jsonlite
 RoxygenNote: 6.0.1.9000

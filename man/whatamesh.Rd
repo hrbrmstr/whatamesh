@@ -4,13 +4,24 @@
 \name{whatamesh}
 \alias{whatamesh}
 \alias{whatamesh-package}
-\title{...}
+\title{Tools to Work with ASCII MeSH Files}
 \description{
+Ref:
+}
+\details{
+\itemize{
+\item \url{ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/asciimesh/}
+\item \url{https://stackoverflow.com/questions/52814022/how-to-split-txt-file-at-specific-location-and-import-each-part-as-table-in-r/52815428?noredirect=1#comment92554994_52815428}
+}
+}
+\section{Support}{
+
 \itemize{
 \item URL: \url{https://gitlab.com/hrbrmstr/whatamesh}
 \item BugReports: \url{https://gitlab.com/hrbrmstr/whatamesh/issues}
 }
 }
+
 \author{
 Bob Rudis (bob@rud.is)
 }
